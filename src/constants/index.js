@@ -24,6 +24,9 @@ import {
     tripguide,
     threejs,
     python,
+    ecommerce,
+    tiktak,
+    landingPage,
   } from "../assets";
   
   export const navLinks = [
@@ -220,11 +223,11 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
+      image: ecommerce,
       source_code_link: "https://github.com/aNdrefLo2008/e-commerce",
     },
     {
-      name: "Insta-photo",
+      name: "TikTak",
       description:
         "Web application that enables users to share photos or videos, like and comment them.",
       tags: [
@@ -241,8 +244,8 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/aNdrefLo2008/instaphoto-app",
+      image: tiktak,
+      source_code_link: "https://github.com/aNdrefLo2008/tiktak",
     },
     {
       name: "Beatiful Design",
@@ -262,7 +265,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
+      image: landingPage,
       source_code_link: "https://github.com/aNdrefLo2008/beatiful-design",
     },
   ];
