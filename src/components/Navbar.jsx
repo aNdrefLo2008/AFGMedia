@@ -23,8 +23,8 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt="logo" className='h-9 object-contain w-9'/>
-          <p className='text-white text-[18px] flex font-bold cursor-pointer'>Andrei &nbsp; 
-          <span className='sm:block hidden'>| Florea</span>
+          <p className='text-white text-[18px] flex font-bold cursor-pointer'>AFG &nbsp;
+          <span className='sm:block hidden'>| &nbsp; Media</span>
           </p>
         </Link>
 
