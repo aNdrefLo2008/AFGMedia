@@ -11,8 +11,8 @@ const Hero = () => {
     <section className='relative w-full h-screen mx-auto flex justify-center items-center flex-col gap-6'>
       <div className={`${styles.paddingX} max-w-7xl mx-auto flex flex-row items-start gap-5`}>
         <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#915eff]'/>
-          <div className='w-1 sm:h-80 h-40 violet-gradient'/>
+          <div className='w-5 h-5 rounded-full bg-[#ff00cc]'/>
+          <div className='w-1 sm:h-80 h-40 rose-gradient'/>
         </div>
 
         <div>
@@ -27,24 +27,25 @@ const Hero = () => {
         <source src={ad} type="video/ogg"/>
         Your browser does not support the video tag.
       </video>*/}
-
-        <div className='bg-gradient-to-r px-4 py-6 w-4/5 xl:w-3/5 rounded-3xl from-[#ff00cc] to-[#333399]'>
+        <div className='hover:bg-gray-200 shadow-card px-4 py-6 w-4/5 xl:w-3/5 rounded-3xl bg-white font-bold'>
           <a href="#contact">
-            <h1 className={`${styles.heroSubText} text-white text-center`}>
+            <h1 className={`${styles.heroSubText} text-gray-800 text-center`}>
               Start working with us for free
             </h1>
           </a>
         </div>
 
-        <div className='px-4 py-6 w-4/5 xl:w-3/5 rounded-3xl bg-tertiary font-bold shadow-sm shadow-primary'>
-          <a href="#contact">
-            <h1 className={`${styles.heroSubText} text-white text-center`}>
-              Get in touch
-            </h1>
-          </a>
+        <div className='violet-pink-gradient shadow-card p-[1px] w-4/5 xl:w-3/5 rounded-3xl'>
+          <div className='transition-colors duration-500 hover:bg-gradient-to-r from-[#ff00cc] to-[#333399] bg-tertiary shadow-card px-4 py-6 rounded-3xl'>
+            <a href="#contact">
+              <h1 className={`${styles.heroSubText} text-center`}>
+                Get in touch
+              </h1>
+            </a>
+          </div>
         </div>
       
-      <div className='absolute xs:bottom-0 bottom:32 w-full justify-center flex items-center'>
+      <div className='absolute bottom-0 w-full justify-center flex items-center'>
         <a href="#about">
           <div className='w-[35px] h-[64px] rounded-3xl flex justify-center items-start p-2 border-4 border-secondary'>
             <motion.div animate={{

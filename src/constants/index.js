@@ -35,10 +35,6 @@ import {
       title: "About",
     },
     {
-      id: "work",
-      title: "Work",
-    },
-    {
       id: "contact",
       title: "Contact",
     },
@@ -46,20 +42,20 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
-      icon: web,
+      title: "Posting content",
+      icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbjrboI-y9RKw3IfKoyv8qksJcW-w_EMKUAn_P-FDpMEnEw_I2SjBu-hObK5Ss4sWFcWs&usqp=CAU",
     },
     {
-      title: "Python Developer",
-      icon: mobile,
+      title: "Running optimized ads",
+      icon: "https://img77.uenicdn.com/image/upload/v1665660954/business/4ca3d01a37c8498e86ee857b349a724e.png",
     },
     {
-      title: "Backend Developer",
-      icon: backend,
+      title: "Create a landing page",
+      icon: "https://decoy.agency/wp-content/uploads/2022/11/building.png",
     },
     {
-      title: "Machine Learning Engineer",
-      icon: creator,
+      title: "SEO optimization",
+      icon: "https://www.shift4shop.com/2021/images/website-builder/website-builder.png",
     },
   ];
   
@@ -85,8 +81,8 @@ import {
       icon: reactjs,
     },
     {
-      name: "Python",
-      icon: python,
+      name: "adobe",
+      icon: "https://cdn-icons-png.flaticon.com/512/5436/5436922.png",
     },
     {
       name: "Tailwind CSS",
@@ -97,12 +93,12 @@ import {
       icon: nodejs,
     },
     {
-      name: "MongoDB",
-      icon: mongodb,
+      name: "Postgresql",
+      icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1985px-Postgresql_elephant.svg.png",
     },
     {
-      name: "Three JS",
-      icon: threejs,
+      name: "Canva",
+    icon: "https://o.remove.bg/downloads/5d5faf80-9ea3-404b-a786-53d378ebb240/image-removebg-preview.png",
     },
     {
       name: "git",
@@ -113,8 +109,8 @@ import {
       icon: figma,
     },
     {
-      name: "supabase",
-      icon: supabase
+      name: "vercel",
+      icon: 'https://o.remove.bg/downloads/d46020f9-946c-4fea-985b-c5a456bc80a8/image-removebg-preview.png'
     },
     {
       name: "nextjs",

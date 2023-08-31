@@ -19,11 +19,11 @@ const App = () => {
             <div className='hidden sm:block'>
               <Tech />
             </div>
-            <Works />
+            {/* <Works /> */}
             {/* <Feedbacks /> */}
             <div className='relative z-0'>
-                <Contact />
-                <StarsCanvas />
+              <StarsCanvas />
+              <Contact />
             </div>
         </div>
     </BrowserRouter>
