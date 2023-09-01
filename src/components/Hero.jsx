@@ -35,8 +35,8 @@ const Hero = () => {
           </a>
         </div>
 
-        <div className='violet-pink-gradient shadow-card p-[1px] w-4/5 xl:w-3/5 rounded-3xl'>
-          <div className='transition-colors duration-500 hover:bg-gradient-to-r from-[#ff00cc] to-[#333399] bg-tertiary shadow-card px-4 py-6 rounded-3xl'>
+        <div className='violet-pink-gradient shadow-card hover:bg-inherit p-[1px] w-4/5 xl:w-3/5 rounded-3xl'>
+          <div className='hover:bg-gradient-to-r from-[#ff00cc] to-[#333399] bg-tertiary shadow-card px-4 py-6 rounded-3xl'>
             <a href="#contact">
               <h1 className={`${styles.heroSubText} text-center`}>
                 Get in touch

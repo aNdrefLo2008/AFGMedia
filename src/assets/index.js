@@ -8,6 +8,7 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 import ad from './Ad.mp4'
 
+import vercel from './vercel.svg'
 import css from "./tech/css.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
@@ -36,6 +37,7 @@ import landingPage from './landingPage.png';
 import ecommerce from './E-Commerce.png';
 
 export {
+  vercel,
   ad,
   landingPage,
   ecommerce,

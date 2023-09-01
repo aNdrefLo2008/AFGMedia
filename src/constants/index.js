@@ -27,6 +27,7 @@ import {
     ecommerce,
     tiktak,
     landingPage,
+    vercel,
   } from "../assets";
   
   export const navLinks = [
@@ -98,7 +99,7 @@ import {
     },
     {
       name: "Canva",
-    icon: "https://o.remove.bg/downloads/5d5faf80-9ea3-404b-a786-53d378ebb240/image-removebg-preview.png",
+    icon: "https://cdn-images-1.medium.com/max/1200/1*A6kkoOVJVpXPWewg8axc5w.png",
     },
     {
       name: "git",
@@ -110,7 +111,7 @@ import {
     },
     {
       name: "vercel",
-      icon: 'https://o.remove.bg/downloads/d46020f9-946c-4fea-985b-c5a456bc80a8/image-removebg-preview.png'
+      icon: vercel
     },
     {
       name: "nextjs",
