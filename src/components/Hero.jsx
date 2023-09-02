@@ -5,6 +5,7 @@ import React from 'react'
 import { styles } from '../styles'
 import { ComputersCanvas } from './canvas'
 import { ad } from '../assets'
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
   return (
@@ -17,9 +18,9 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>Hi, we are <span className='bg-gradient-to-r text-transparent bg-clip-text from-[#ff00cc] to-[#333399]'>AFG Media</span></h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100 xs:block hidden`}>
-            We take care of all your boring marketing campaigns and ensure the fastest growth possible for your business
-          </p>
+            <p className={`${styles.heroSubText} mt-2 text-white-100 xs:block hidden`}>
+              We ensure the fastest growth possible through establishing a digital footprint for your business
+            </p>
         </div>
       </div>
 
@@ -28,11 +29,11 @@ const Hero = () => {
         Your browser does not support the video tag.
       </video>*/}
         <div className='hover:bg-gray-200 shadow-card px-4 py-6 w-4/5 xl:w-3/5 rounded-3xl bg-white font-bold'>
-          <a href="#contact">
-            <h1 className={`${styles.heroSubText} text-gray-800 text-center`}>
+          <Link to={"https://calendly.com/afgmedia15/introductory-call"}>
+            <h1 className={`${styles.heroSubText} font-semibold text-gray-800 text-center`}>
               Start working with us for free
             </h1>
-          </a>
+          </Link>
         </div>
 
         <div className='violet-pink-gradient shadow-card hover:bg-inherit p-[1px] w-4/5 xl:w-3/5 rounded-3xl'>
