@@ -1,31 +1,43 @@
+// App.jsx
+
 import React from 'react'
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from './components'
-
+import { About, Contact, Hero, Navbar, Works, Tech, StarsCanvas, MotionGraphics, Experience, Feedbacks } from './components'
 import { Analytics } from '@vercel/analytics/react';
 
 const App = () => {
   return (
     <BrowserRouter>
-        <div className='relative z-0 bg-primary'>
-            <div className=''>
-              <Analytics />
-              <Navbar />
+      <div className='relative z-0 bg-primary'>
+        <Analytics />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={
+            <>
               <Hero />
-            </div>
-            <About />
-            {/*<Experience /> */}
-            <div className='hidden sm:block'>
-              <Tech />
-            </div>
-            {/* <Works /> */}
-            {/* <Feedbacks /> */}
-            <div className='relative z-0'>
-              <StarsCanvas />
-              <Contact />
-            </div>
-        </div>
+              <div id="about">
+                <About />
+              </div>
+              <Experience />
+              <div className='hidden sm:block'>
+                <Tech />
+              </div>
+              <div id="works">
+                <Works />
+              </div>
+              <div id="testimonials">
+              <Feedbacks />
+              </div>
+              <div className='relative z-0' id="contact">
+                <StarsCanvas />
+                <Contact />
+              </div>
+            </>
+          } />
+          <Route path="/motion-graphics" element={<MotionGraphics />} />
+        </Routes>
+      </div>
     </BrowserRouter>
   )
 }

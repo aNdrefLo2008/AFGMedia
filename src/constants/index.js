@@ -31,15 +31,15 @@ import {
   } from "../assets";
   
   export const navLinks = [
-    {
-      id: "about",
-      title: "About",
-    },
-    {
-      id: "contact",
-      title: "Contact",
-    },
-  ];
+  { id: "about", title: "about", type: "section" },
+  { id: "experience", title: "experience", type: "section" },
+  { id: "works", title: "works", type: "section" },
+  { id: "testimonials", title: "testimonials", type: "section" },
+  { id: "contact", title: "contact", type: "section" },
+  { id: "motion-graphics", title: "motion-graphics", type: "route" }
+];
+
+
   
   const services = [
     {

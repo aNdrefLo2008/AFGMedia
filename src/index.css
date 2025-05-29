@@ -5,6 +5,27 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+/* index.css */
+body {
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark {
+  background-color: #0f172a;
+  color: white;
+}
+
+body {
+  background-color: white;
+  color: black;
+}
+
+
 * {
   margin: 0;
   padding: 0;
