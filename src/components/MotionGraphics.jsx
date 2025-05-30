@@ -1,6 +1,5 @@
 // src/pages/MotionGraphics.jsx
-
-import React from 'react';
+import logoAnimations from "../assets/Google Logos Animation.mp4"
 
 const projects = [
   {
@@ -10,8 +9,8 @@ const projects = [
   },
   {
     title: "Logo Animation",
-    description: "Clean and modern logo reveal animation showcasing brand identity.",
-    videoUrl: "https://www.youtube.com/"
+    description: "Example of clean and modern logo reveal animation showcasing brand identity.",
+    videoUrl: logoAnimations
   },
   {
     title: "Promo Ad Editing",
@@ -22,23 +21,22 @@ const projects = [
 
 const MotionGraphics = () => {
   return (
-    <section className="min-h-screen pt-28 px-6 bg-primary text-white">
+    <section className="min-h-screen pt-28 px-6 bg-white text-black transition-colors duration-500 dark:bg-primary dark:text-white">
       <h2 className="text-4xl font-bold mb-8">Motion Graphics & Editing</h2>
       <div className="grid gap-10 md:grid-cols-2">
         {projects.map((project, index) => (
-          <div key={index} className="bg-tertiary p-5 rounded-xl shadow-lg">
+          <div key={index} className="shadow-experiment-card bg-gray-50 transition-colors duration-500 dark:bg-tertiary p-5 rounded-xl shadow-lg">
             <h3 className="text-2xl font-semibold mb-2">{project.title}</h3>
-            <p className="text-secondary mb-4">{project.description}</p>
-            <div className="aspect-video">
-              <iframe
-                width="100%"
-                height="100%"
+            <p className="text-gray-600 transition-colors duration-500 dark:text-secondary mb-4">{project.description}</p>
+            <div className="aspect-video ">
+              <video
                 src={project.videoUrl}
-                title={project.title}
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
+                loop
+                muted
+                autoPlay
+                playsInline
+                className="rounded-3xl w-full h-full object-cover"
+              />
             </div>
           </div>
         ))}

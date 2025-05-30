@@ -30,6 +30,9 @@ import {
     vercel,
   } from "../assets";
   
+import cisl from "../assets/cisl.svg"
+import fidia from "../assets/fidia.png"
+
   export const navLinks = [
   { id: "about", title: "about", type: "section" },
   { id: "experience", title: "experience", type: "section" },
@@ -44,19 +47,19 @@ import {
   const services = [
     {
       title: "Posting content",
-      icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbjrboI-y9RKw3IfKoyv8qksJcW-w_EMKUAn_P-FDpMEnEw_I2SjBu-hObK5Ss4sWFcWs&usqp=CAU",
+      icon: "IoPeopleSharp",
     },
     {
       title: "Running optimized ads",
-      icon: "https://img77.uenicdn.com/image/upload/v1665660954/business/4ca3d01a37c8498e86ee857b349a724e.png",
+      icon: "FaHeadset",
     },
     {
       title: "Create a landing page",
-      icon: "https://decoy.agency/wp-content/uploads/2022/11/building.png",
+      icon: "FaMoneyCheck",
     },
     {
       title: "SEO optimization",
-      icon: "https://www.shift4shop.com/2021/images/website-builder/website-builder.png",
+      icon: "FaMoneyBillTrendUp",
     },
   ];
   
@@ -121,32 +124,32 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      title: "Motion Graphics Introductory Video",
+      company_name: "Fidia",
+      icon: fidia,
+      iconBg: "#FFFFFF",
+      date: "Mar 2025 - Apr 2025",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Started by analyzing the project and its goals in Photoshop",
+        "Worked on After Effects to develop the video",
+        "Collaborating and communicating with the client to adjust and perfect the final result",
+        "Finalized the project",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      title: "After Effects Intro Animation",
+      company_name: "FIT-CISL",
+      icon: cisl,
+      iconBg: "#FFFFFF",
+      date: "Mar 2025 - May 2025",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Talked about the project with the client deeply on Fiverr",
+        "Organized the material to start working on Photoshop",
+        "Collaborated with another partner to ensure client satisfaction at its fullest",
+        "Ended the project and ensured predetermined goals were all met",
       ],
     },
-    {
+    /*{
       title: "Web Developer",
       company_name: "Shopify",
       icon: shopify,
@@ -171,34 +174,26 @@ import {
         "Implementing responsive design and ensuring cross-browser compatibility.",
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
-    },
+    },*/
   ];
   
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
+        "I remained impressed on how much the AFG Media Team delivered on their promises.",
+      name: "Paolo",
       designation: "CFO",
-      company: "Acme Co",
+      company: "Graphic Designer",
       image: "https://randomuser.me/api/portraits/women/4.jpg",
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
+        "Great talented team that delivered on everything they have promised. Fast, Beatiful and Goal-Oriented.",
+      name: "Luca",
       designation: "COO",
-      company: "DEF Corp",
+      company: "Videos Editor",
       image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
+    }
   ];
   
   const projects = [

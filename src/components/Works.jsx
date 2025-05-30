@@ -15,7 +15,7 @@ const ProjectCard = ({ index, name, description, tags, image, sourc_code_link })
         scale: 1, 
         speed: 450
       }}
-      className=" bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+      className="bg-gray-100 shadow-experiment-card transition-colors duration-500 dark:bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
     >
       <div className="relative h-[230px]">
         <img
@@ -40,7 +40,7 @@ const ProjectCard = ({ index, name, description, tags, image, sourc_code_link })
 
       <div className="mt-5">
         <h3 className="font-semibold sm:text-[22px]" >{name}</h3>
-        <p className="sm:text-[14px] text-[10px] text-secondary tracking-wider" >{description}</p>
+        <p className="sm:text-[14px] text-[10px] text-gray-500 transition-colors duration-500 dark:text-secondary tracking-wider" >{description}</p>
       </div>
 
       <div className="mt-4 flex flex-wrap gap-2">
@@ -54,7 +54,7 @@ const ProjectCard = ({ index, name, description, tags, image, sourc_code_link })
 
 const Works = () => {
   return (
-    <>
+    <div className="mb-2">
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>My work</p>
         <h2 className={styles.sectionHeadText}>Projects</h2>
@@ -78,7 +78,7 @@ const Works = () => {
           <ProjectCard key={`project-${index}`} index={index} {...project}/>
         ))}
       </div>
-    </>
+    </div>
   )
 }
 

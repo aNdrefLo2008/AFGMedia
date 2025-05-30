@@ -7,41 +7,54 @@ import { services } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
 import { SectionWrapper } from '../hco'
 
-const ServiceCard = ({ index, title, icon }) => {
+import { IoPeopleSharp } from "react-icons/io5";
+import { FaHeadset } from "react-icons/fa";
+import { FaMoneyCheck } from "react-icons/fa";
+import { FaMoneyBillTrendUp } from "react-icons/fa6";
+
+const icons = [
+  <IoPeopleSharp className="w-16 h-16 object-contain" />,
+  <FaHeadset className="w-16 h-16 object-contain" />,
+  <FaMoneyCheck className="w-16 h-16 object-contain" />,
+  <FaMoneyBillTrendUp className="w-16 h-16 object-contain" />,
+];
+
+const ServiceCard = ({ index, title }) => {
   return (
     <Tilt className="xs:w-[250px] w-full">
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-        className='w-full violet-pink-gradient p-[1px] rounded-[20px] shadow-card'
-      > 
+        className='w-full transition-colors duration-500 dark:bg-gradient-to-r from-blue-900 to-green-900 p-[1px] rounded-[20px] shadow-experiment-card'
+      >
         <div
           options={{
             max: 45,
             scale: 1,
             speed: 450,
           }}
-          className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
+          className='bg-white transition-colors duration-500 dark:bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
         >
-          <img src={icon} alt={title} className='rounded-full w-28 h-28 object-contain'/>
-          <h3 className='text-white text-[20px] font-bold text-center'>{title}</h3>
+          {icons[index % icons.length]}
+          <h3 className='text-black transition-colors duration-500 dark:text-white text-[20px] font-bold text-center'>{title}</h3>
         </div>
       </motion.div>
     </Tilt>
   )
 }
 
+
 const About = () => {
   return (
-    <>
+    <div className='bg-white transition-colors duration-500 dark:bg-black mb-4'>
       <motion.div variants={textVariant()} id="about">
           <p className={styles.sectionSubText}>Introduction</p>
           <h2 className={styles.sectionHeadText}>Overview</h2>
       </motion.div>
       <motion.p
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='mt-4 text-gray-700 transition-colors duration-500 dark:text-secondary text-[17px] max-w-3xl leading-[30px]'
         variants={fadeIn("", "", 0.1, 1)}
       >
-        Hi there! We're AFG Media, a team that helps small businesses grow. We do digital marketing to tell more people about your offer. We can post content to grow your audience or create the best ROI Ads on your favourite social media. We offer as a bonus an elegant landing page that describes what you do and we optimize for SEO. All of this means more customers and more money for you. Nice to meet you!
+        Hi there! We're AFG Media, a team that helps businesses grow. We do digital marketing to tell more people about your offer. We can post content to grow your audience or create websites that will leave your clients positively amazed. All of this means more customers and more money for you. You do not have to worry anymore about the pain of finding new clients because we are going to handle all that stress. We run a zero-risk plan, so if we do not achieve your desired results you do not have to pay nothing. Nice to meet you!
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
@@ -49,7 +62,7 @@ const About = () => {
           <ServiceCard title={service.title} key={service.title} index={i} {...service}/>
         )}
       </div>
-    </>
+    </div>
   )
 }
 
