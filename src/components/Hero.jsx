@@ -17,7 +17,9 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText}`}>Want to <span className='bg-gradient-to-r text-transparent bg-clip-text from-gray-800 to-slate-500 dark:from-gray-200 transition-colors duration-500 dark:to-slate-500'>10x</span> your Sales?</h1>
+          <h1 className={`${styles.heroHeadText}`}>Want to <span className='animated-gradient text-transparent bg-clip-text bg-gradient-to-r from-gray-800 via-indigo-800 to-slate-500 dark:from-gray-200 dark:via-indigo-300 dark:to-slate-400'>
+            10x
+          </span> your Sales?</h1>
             <p className={`${styles.heroSubText} mt-2 text-black transition-colors duration-500 dark:text-white-100 xs:block hidden`}>
               We ensure the fastest growth possible through establishing a digital footprint for your business
             </p>
@@ -28,24 +30,28 @@ const Hero = () => {
         <source src={ad} type="video/ogg"/>
         Your browser does not support the video tag.
       </video>*/}
-        <div className='shadow-experiment-card px-4 py-6 w-4/5 xl:w-3/5 rounded-3xl bg-black transition-colors duration-500 dark:bg-white font-bold'>
-          <Link to={"https://calendly.com/afgmedia15/introductory-call"}>
-            <h1 className={`
-               lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px] font-semibold text-gray-200 transition-colors duration-500 dark:text-gray-800 text-center`}>
-              Start working with us for free
-            </h1>
-          </Link>
+        <div className="button-shadow transition hover:-translate-y-1 duration-500 hover:scale-110 w-4/5 xl:w-3/5 rounded-3xl">
+          <div className='inner-button px-4 py-6 rounded-3xl font-bold dark:hover:bg-gray-200 duration-500 transition hover:bg-gray-900'>
+            <Link to={"https://calendly.com/afgmedia15/introductory-call"}>
+              <h1 className='lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px] font-semibold text-center'>
+                Start working with us for free
+              </h1>
+            </Link>
+          </div>
         </div>
 
-        <div className='bg-gradient-to-r  dark:from-black dark:to-slate-900 shadow-experiment-card hover:bg-inherit transition-colors duration-500 dark:p-[1px] w-4/5 xl:w-3/5 rounded-3xl'>
-          <div className=' bg-gray-300 transition-colors duration-500 dark:bg-tertiary shadow-card px-4 py-6 rounded-3xl'>
+
+        <div className="button-shadow duration-500 transition animated-border w-4/5 xl:w-3/5 rounded-3xl">
+          <div className='bg-gray-300 dark:bg-tertiary px-4 py-6 rounded-3xl shadow-card'>
             <a href="#contact">
-              <h1 className={`${styles.heroSubText} hover:text-gray-600 text-center`}>
+              <h1 className={`${styles.heroSubText} text-center`}>
                 Get in touch
               </h1>
             </a>
           </div>
         </div>
+
+
       
       <div className='absolute bottom-0 w-full justify-center flex items-center'>
         <a href="#about">
