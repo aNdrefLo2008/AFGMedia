@@ -145,7 +145,7 @@ const Navbar = () => {
                 whileTap={{ scale: 0.9 }}
                 whileHover={{ scale: 1.1 }}
               >
-                <img src={flagMap[language]} className="w-6 h-6" />
+                <img src={flagMap[language] || enFlag} className="w-6 h-6" />
               </motion.div>
             </button>
 
