@@ -30,7 +30,7 @@ import {
     vercel,
   } from "../assets";
   
-import cisl from "../assets/cisl.svg"
+import cisl from "../assets/CISL.svg"
 import fidia from "../assets/fidia.png"
 
   export const navLinks = [

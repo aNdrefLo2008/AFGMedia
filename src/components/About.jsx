@@ -13,10 +13,10 @@ import { FaMoneyCheck } from "react-icons/fa";
 import { FaMoneyBillTrendUp } from "react-icons/fa6";
 
 const icons = [
-  <IoPeopleSharp className="w-16 h-16 object-contain" />,
-  <FaHeadset className="w-16 h-16 object-contain" />,
-  <FaMoneyCheck className="w-16 h-16 object-contain" />,
-  <FaMoneyBillTrendUp className="w-16 h-16 object-contain" />,
+  <IoPeopleSharp className="text-black dark:text-white w-16 h-16 object-contain" />,
+  <FaHeadset className="text-black dark:text-white w-16 h-16 object-contain" />,
+  <FaMoneyCheck className="text-black dark:text-white w-16 h-16 object-contain" />,
+  <FaMoneyBillTrendUp className="text-black dark:text-white w-16 h-16 object-contain" />,
 ];
 
 const ServiceCard = ({ index, title }) => {
