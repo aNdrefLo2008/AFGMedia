@@ -44,6 +44,7 @@ const FeedbackCard = ({
 );
 
 const Feedbacks = () => {
+  console.log(testimonials[0].image)
   return (
     <div className={`mt-12 bg-gray-200 transition-colors duration-500 dark:bg-black-100 rounded-[20px]`}>
       <div

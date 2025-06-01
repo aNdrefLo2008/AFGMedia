@@ -28,6 +28,8 @@ import {
     tiktak,
     landingPage,
     vercel,
+    paolo_img,
+    luca_img
   } from "../assets";
   
 import cisl from "../assets/CISL.svg"
@@ -41,7 +43,6 @@ import fidia from "../assets/fidia.png"
   { id: "contact", title: "contact", type: "section" },
   { id: "motion-graphics", title: "motion-graphics", type: "route" }
 ];
-
 
   
   const services = [
@@ -184,7 +185,7 @@ import fidia from "../assets/fidia.png"
       name: "Paolo",
       designation: "CFO",
       company: "Graphic Designer",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
+      image: paolo_img,
     },
     {
       testimonial:
@@ -192,7 +193,7 @@ import fidia from "../assets/fidia.png"
       name: "Luca",
       designation: "COO",
       company: "Videos Editor",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
+      image: luca_img,
     }
   ];
   

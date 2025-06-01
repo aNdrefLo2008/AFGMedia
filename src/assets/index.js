@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import logo from "./logo afg.png"
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -36,7 +36,12 @@ import tiktak from './Tiktak.png';
 import landingPage from './landingPage.png';
 import ecommerce from './E-Commerce.png';
 
+import paolo_img from "../assets/Studio Guri.png"
+import luca_img from "../assets/luca kudu anello.jpg"
+
 export {
+  paolo_img,
+  luca_img,
   vercel,
   ad,
   landingPage,

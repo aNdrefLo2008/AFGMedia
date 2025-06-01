@@ -1,22 +1,23 @@
 // src/pages/MotionGraphics.jsx
 import logoAnimations from "../assets/Google Logos Animation.mp4"
+import portfolio from "../assets/The Portfolio 3.mp4"
 
 const projects = [
   {
-    title: "Cinematic Intro Reel",
+    title: "Showcase Video",
     description: "A dynamic opening sequence created using After Effects, featuring animated titles and transitions.",
-    videoUrl: "https://www.youtube.com/"
+    videoUrl: portfolio
   },
   {
     title: "Logo Animation",
     description: "Example of clean and modern logo reveal animation showcasing brand identity.",
     videoUrl: logoAnimations
   },
-  {
+  /*{
     title: "Promo Ad Editing",
     description: "Short promo ad combining motion graphics and video editing for a fictional product launch.",
     videoUrl: "https://www.youtube.com/s"
-  }
+  }*/
 ];
 
 const MotionGraphics = () => {

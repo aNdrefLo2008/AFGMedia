@@ -104,7 +104,10 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className='h-12 w-12 rounded-full object-contain' />
+          <div className='bg-black rounded-full p-3 mr-2'>
+            <img src={logo} alt="logo" className='h-8 w-8 rounded-full' />
+          </div>
+          
           <p className='text-black transition-colors duration-500 dark:text-white text-[18px] font-bold cursor-pointer'>AFG Media</p>
         </Link>
 
