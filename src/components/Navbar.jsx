@@ -183,7 +183,7 @@ const Navbar = () => {
             onClick={toggleTheme}
             whileTap={{ rotate: 45, scale: 0.9 }}
             whileHover={{ scale: 1.1 }}
-            className="text-black transition-colors duration-500 dark:text-white mr-2"
+            className="text-black block transition-colors duration-500 dark:text-white mr-2"
           >
             <div className='p-3 bg-gray-200 transition-colors duration-500 dark:bg-tertiary rounded-full'>
               {theme === 'dark' ? (
@@ -195,7 +195,7 @@ const Navbar = () => {
           </motion.button>
 
           {/* Hamburger Menu */}
-          <div className='lg:hidden'>
+          <div className='lg:hidden block'>
             <HiOutlineMenuAlt3 alt="menu"
               className={`${toggle ? "hidden" : "inline"} w-[28px] h-[28px] object-contain cursor-pointer transition-colors duration-500 dark:text-white text-black`}
               onClick={() => setToggle(!toggle)}/>

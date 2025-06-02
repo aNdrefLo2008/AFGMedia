@@ -14,6 +14,12 @@
     "landing": "Erstellen einer Landingpage",
     "seo": "SEO-Optimierung"
   },
+  "hero": {
+    "title": "Willst du deinen Umsatz <1>verzehnfachen</1>?",
+    "subtitle": "Wir sorgen für das schnellste Wachstum durch die Etablierung einer digitalen Präsenz für dein Unternehmen.",
+    "getStarted": "Loslegen",
+    "contactUs": "Kontaktiere uns"
+  },
   "sectionSubText": "Was wir bisher gemacht haben",
   "sectionHeadText": "Erfahrungen",
   "experiences": [

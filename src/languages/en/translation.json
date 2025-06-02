@@ -14,6 +14,12 @@
     "landing": "Create a landing page",
     "seo": "SEO optimization"
   },
+   "hero": {
+    "title": "Want to <1>10x</1> your Sales?",
+    "subtitle": "We ensure the fastest growth possible through establishing a digital footprint for your business",
+    "getStarted": "Get Started",
+    "contactUs": "Contact us"
+  },
   "sectionSubText": "What We have done so far",
   "sectionHeadText": "Experience",
   "experiences": [

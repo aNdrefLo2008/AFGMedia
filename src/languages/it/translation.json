@@ -14,6 +14,12 @@
     "landing": "Creazione di una landing page",
     "seo": "Ottimizzazione SEO"
   },
+  "hero": {
+    "title": "Vuoi <1>decuplicare</1> le tue vendite?",
+    "subtitle": "Garantiamo la crescita più rapida possibile creando una presenza digitale per la tua azienda.",
+    "getStarted": "Inizia ora",
+    "contactUs": "Contattaci"
+  },
   "sectionSubText": "Cosa abbiamo fatto finora",
   "sectionHeadText": "Esperienza",
   "experiences": [
