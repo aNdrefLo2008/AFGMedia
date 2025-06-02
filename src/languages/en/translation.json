@@ -4,5 +4,154 @@
   "works": "Works",
   "testimonials": "Testimonials",
   "contact": "Contact",
-  "motion-graphics": "Motion Graphics"
+  "motion-graphics": "Motion Graphics",
+  "intro": "Introduction",
+  "overview": "Overview",
+  "description": "Hi there! We're AFG Media, a team that helps businesses grow. We do digital marketing to tell more people about your offer. We can post content to grow your audience or create websites that will leave your clients positively amazed. All of this means more customers and more money for you. You do not have to worry anymore about the pain of finding new clients because we are going to handle all that stress. We run a zero-risk plan, so if we do not achieve your desired results you do not have to pay nothing. Nice to meet you!",
+  "services": {
+    "posting": "Posting content",
+    "ads": "Running optimized ads",
+    "landing": "Create a landing page",
+    "seo": "SEO optimization"
+  },
+  "sectionSubText": "What We have done so far",
+  "sectionHeadText": "Experience",
+  "experiences": [
+    {
+      "title": "Motion Graphics Introductory Video",
+      "company_name": "Fidia",
+      "date": "Mar 2025 - Apr 2025",
+      "points": [
+        "Started by analyzing the project and its goals in Photoshop",
+        "Worked on After Effects to develop the video",
+        "Collaborating and communicating with the client to adjust and perfect the final result",
+        "Finalized the project"
+      ]
+    },
+    {
+      "title": "After Effects Intro Animation",
+      "company_name": "FIT-CISL",
+      "date": "Mar 2025 - May 2025",
+      "points": [
+        "Talked about the project with the client deeply on Fiverr",
+        "Organized the material to start working on Photoshop",
+        "Collaborated with another partner to ensure client satisfaction at its fullest",
+        "Ended the project and ensured predetermined goals were all met"
+      ]
+    }
+  ],
+  "Testimonials": {
+    "sectionSubText": "What others say",
+    "sectionHeadText": "Testimonials.",
+    "items": [
+      {
+        "testimonial": "I remained impressed on how much the AFG Media Team delivered on their promises.",
+        "name": "Paolo",
+        "designation": "CFO",
+        "company": "Graphic Designer",
+        "image": "../src/assets/Studio Guri.png"
+      },
+      {
+        "testimonial": "Great talented team that delivered on everything they have promised. Fast, Beatiful and Goal-Oriented.",
+        "name": "Luca",
+        "designation": "COO",
+        "company": "Videos Editor",
+        "image": "../src/assets/luca kudu anello.jpg"
+      }
+    ]
+  },
+  "projects": {
+    "sectionSubText": "Our work",
+    "sectionHeadText": "Projects",
+    "description": "Following projects showcase our skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories. It reflects our ability to solve complex problems, work with different technologies, and manage projects effectively.",
+    "items": [
+      {
+        "name": "E-commerce",
+        "description": "Web application where users can buy phones, tablets or laptops, using Stripe to ensure safe payments, and GraphQL for the connection with the server.",
+        "tags": [
+          { "name": "nextjs", "color": "blue-text-gradient" },
+          { "name": "graphql", "color": "green-text-gradient" },
+          { "name": "stripeapi", "color": "pink-text-gradient" }
+        ],
+        "image": "../src/assets/E-Commerce.png",
+        "source_code_link": "https://github.com/aNdrefLo2008/e-commerce"
+      },
+      {
+        "name": "TikTak",
+        "description": "Web application that enables users to share photos or videos, like and comment on them.",
+        "tags": [
+          { "name": "zustand", "color": "blue-text-gradient" },
+          { "name": "sanity", "color": "green-text-gradient" },
+          { "name": "typescript", "color": "pink-text-gradient" }
+        ],
+        "image": "../src/assets/Tiktak.png",
+        "source_code_link": "https://github.com/aNdrefLo2008/tiktak"
+      },
+      {
+        "name": "Beautiful Design",
+        "description": "Landing page designed in Figma and created in React, created to showcase the potential of TailwindCSS.",
+        "tags": [
+          { "name": "nextjs", "color": "blue-text-gradient" },
+          { "name": "figma", "color": "green-text-gradient" },
+          { "name": "tailwindcss", "color": "pink-text-gradient" }
+        ],
+        "image": "../src/assets/landingPage.png",
+        "source_code_link": "https://github.com/aNdrefLo2008/beatiful-design"
+      }
+    ]
+  },
+  "Contact": {
+    "sectionSubText": "Get in Touch",
+    "sectionHeadText": "Contact",
+    "form": {
+      "labels": {
+        "name": "Your Name",
+        "email": "Your Email",
+        "message": "Your Message"
+      },
+      "placeholders": {
+        "name": "What's your name?",
+        "email": "What's your email?",
+        "message": "What do you want to say?"
+      },
+      "button": {
+        "send": "Send",
+        "sending": "Sending..."
+      },
+      "alerts": {
+        "success": "Thank you. I will get back to you as soon as possible.",
+        "error": "Ahh, something went wrong. Please try again."
+      }
+    }
+  },
+  "footer": {
+    "sections": {
+      "company": "Company",
+      "helpCenter": "Help center",
+      "legal": "Legal"
+    },
+    "companyLinks": {
+      "about": "About",
+      "experience": "Experience",
+      "testimonials": "Testimonials",
+      "motionGraphics": "Motion Graphics"
+    },
+    "helpCenterLinks": {
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "fiverr": "Fiverr",
+      "contactUs": "Contact Us"
+    },
+    "legalLinks": {
+      "privacyPolicy": "Privacy Policy",
+      "licensing": "Licensing",
+      "termsConditions": "Terms & Conditions"
+    },
+    "copyright": "© 2025 AFG Media. All Rights Reserved.",
+    "social": {
+      "instagramPage": "Instagram page",
+      "fiverrPage": "Fiverr page",
+      "linkedinPage": "LinkedIn page"
+    }
+  }
 }

@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { About, Contact, Hero, Navbar, Works, Tech, StarsCanvas, MotionGraphics, Experience, Feedbacks } from './components'
 import { Analytics } from '@vercel/analytics/react';
 import New_Hero from './components/New Hero';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -35,6 +36,7 @@ const App = () => {
                 <StarsCanvas />
                 <Contact />
               </div>
+              <Footer />
             </>
           } />
           <Route path="/motion-graphics" element={<MotionGraphics />} />

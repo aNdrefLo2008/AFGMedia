@@ -45,24 +45,25 @@ import fidia from "../assets/fidia.png"
 ];
 
   
-  const services = [
-    {
-      title: "Posting content",
-      icon: "IoPeopleSharp",
-    },
-    {
-      title: "Running optimized ads",
-      icon: "FaHeadset",
-    },
-    {
-      title: "Create a landing page",
-      icon: "FaMoneyCheck",
-    },
-    {
-      title: "SEO optimization",
-      icon: "FaMoneyBillTrendUp",
-    },
-  ];
+const services = [
+  {
+    id: "posting",
+    icon: "IoPeopleSharp",
+  },
+  {
+    id: "ads",
+    icon: "FaHeadset",
+  },
+  {
+    id: "landing",
+    icon: "FaMoneyCheck",
+  },
+  {
+    id: "seo",
+    icon: "FaMoneyBillTrendUp",
+  },
+];
+
   
   const technologies = [
     {

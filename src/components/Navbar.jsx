@@ -112,7 +112,7 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Nav */}
-        <ul className='list-none hidden lg:flex flex-row gap-10 items-center'>
+        <ul className='list-none hidden xl:flex flex-row gap-10 items-center'>
           {navLinks.map(link => (
             <li
               key={link.id}
@@ -207,7 +207,7 @@ const Navbar = () => {
 
         {/* Mobile Nav Menu */}
         {toggle && (
-          <div className='lg:hidden p-6 bg-gray-200 transition-colors duration-500 dark:bg-tertiary absolute top-20 right-4 my-2 min-w-[140px] z-10 rounded-xl'>
+          <div className='xl:hidden p-6 bg-gray-200 transition-colors duration-500 dark:bg-tertiary absolute top-20 right-4 my-2 min-w-[140px] z-10 rounded-xl'>
             <ul className='list-none flex flex-col gap-4'>
               {navLinks.map(link => (
                 <li

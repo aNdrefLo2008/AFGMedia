@@ -4,5 +4,154 @@
   "works": "Projekte",
   "testimonials": "Kundenmeinungen",
   "contact": "Kontakt",
-  "motion-graphics": "Motion Graphics"
+  "motion-graphics": "Motion Graphics",
+  "intro": "Einführung",
+  "overview": "Überblick",
+  "description": "Hallo! Wir sind AFG Media, ein Team, das Unternehmen beim Wachstum unterstützt. Wir machen digitales Marketing, um mehr Menschen über Ihr Angebot zu informieren. Wir posten Inhalte, um Ihre Zielgruppe zu vergrößern, oder erstellen Websites, die Ihre Kunden beeindrucken. Das bedeutet mehr Kunden und mehr Umsatz für Sie. Sie müssen sich keine Sorgen mehr über die Kundengewinnung machen – das übernehmen wir für Sie. Wir arbeiten mit einer risikofreien Strategie: Wenn wir Ihre gewünschten Ergebnisse nicht erreichen, zahlen Sie nichts. Schön, Sie kennenzulernen!",
+  "services": {
+    "posting": "Inhalte posten",
+    "ads": "Optimierte Werbung schalten",
+    "landing": "Erstellen einer Landingpage",
+    "seo": "SEO-Optimierung"
+  },
+  "sectionSubText": "Was wir bisher gemacht haben",
+  "sectionHeadText": "Erfahrungen",
+  "experiences": [
+    {
+      "title": "Einführungsvideo in Motion Graphics",
+      "company_name": "Fidia",
+      "date": "März 2025 - April 2025",
+      "points": [
+        "Projektanalyse und Zieldefinition mit Photoshop begonnen",
+        "Video mit After Effects entwickelt",
+        "Zusammenarbeit und Kommunikation mit dem Kunden zur Perfektionierung des Endprodukts",
+        "Projekt abgeschlossen"
+      ]
+    },
+    {
+      "title": "After Effects Intro-Animation",
+      "company_name": "FIT-CISL",
+      "date": "März 2025 - Mai 2025",
+      "points": [
+        "Ausführliche Projektbesprechung mit dem Kunden auf Fiverr",
+        "Material in Photoshop organisiert",
+        "Zusammenarbeit mit einem Partner zur vollständigen Kundenzufriedenheit",
+        "Projekt beendet und alle Ziele erreicht"
+      ]
+    }
+  ],
+  "Testimonials": {
+    "sectionSubText": "Was andere sagen",
+    "sectionHeadText": "Referenzen.",
+    "items": [
+      {
+        "testimonial": "Ich war beeindruckt, wie sehr das AFG Media Team seine Versprechen gehalten hat.",
+        "name": "Paolo",
+        "designation": "Finanzvorstand",
+        "company": "Grafikdesigner",
+        "image": "../src/assets/Studio Guri.png"
+      },
+      {
+        "testimonial": "Tolles talentiertes Team, das alles geliefert hat, was es versprochen hat. Schnell, schön und zielorientiert.",
+        "name": "Luca",
+        "designation": "Betriebsleiter",
+        "company": "Videoeditor",
+        "image": "../src/assets/luca kudu anello.jpg"
+      }
+    ]
+  },
+  "projects": {
+    "sectionSubText": "Unsere Arbeit",
+    "sectionHeadText": "Projekte",
+    "description": "Die folgenden Projekte zeigen unsere Fähigkeiten und Erfahrungen anhand von praxisnahen Beispielen. Jedes Projekt wird kurz beschrieben und enthält Links zu den Code-Repositories. Es zeigt unsere Fähigkeit, komplexe Probleme zu lösen, mit verschiedenen Technologien zu arbeiten und Projekte effektiv zu managen.",
+    "items": [
+      {
+        "name": "E-Commerce",
+        "description": "Webanwendung, bei der Benutzer Telefone, Tablets oder Laptops kaufen können. Stripe sorgt für sichere Zahlungen, und GraphQL verbindet die Anwendung mit dem Server.",
+        "tags": [
+          { "name": "nextjs", "color": "blue-text-gradient" },
+          { "name": "graphql", "color": "green-text-gradient" },
+          { "name": "stripeapi", "color": "pink-text-gradient" }
+        ],
+        "image": "../src/assets/E-Commerce.png",
+        "source_code_link": "https://github.com/aNdrefLo2008/e-commerce"
+      },
+      {
+        "name": "TikTak",
+        "description": "Webanwendung, die es Benutzern ermöglicht, Fotos oder Videos zu teilen, diese zu liken und zu kommentieren.",
+        "tags": [
+          { "name": "zustand", "color": "blue-text-gradient" },
+          { "name": "sanity", "color": "green-text-gradient" },
+          { "name": "typescript", "color": "pink-text-gradient" }
+        ],
+        "image": "../src/assets/Tiktak.png",
+        "source_code_link": "https://github.com/aNdrefLo2008/tiktak"
+      },
+      {
+        "name": "Schönes Design",
+        "description": "Landingpage, die in Figma gestaltet und in React erstellt wurde, um die Möglichkeiten von TailwindCSS zu zeigen.",
+        "tags": [
+          { "name": "nextjs", "color": "blue-text-gradient" },
+          { "name": "figma", "color": "green-text-gradient" },
+          { "name": "tailwindcss", "color": "pink-text-gradient" }
+        ],
+        "image": "../src/assets/landingPage.png",
+        "source_code_link": "https://github.com/aNdrefLo2008/beatiful-design"
+      }
+    ]
+  },
+  "Contact": {
+    "sectionSubText": "Kontakt aufnehmen",
+    "sectionHeadText": "Kontakt",
+    "form": {
+      "labels": {
+        "name": "Ihr Name",
+        "email": "Ihre E-Mail",
+        "message": "Ihre Nachricht"
+      },
+      "placeholders": {
+        "name": "Wie heißen Sie?",
+        "email": "Wie lautet Ihre E-Mail?",
+        "message": "Was möchten Sie sagen?"
+      },
+      "button": {
+        "send": "Senden",
+        "sending": "Wird gesendet..."
+      },
+      "alerts": {
+        "success": "Danke. Ich werde mich so schnell wie möglich bei Ihnen melden.",
+        "error": "Oh, etwas ist schiefgelaufen. Bitte versuchen Sie es erneut."
+      }
+    }
+  },
+  "footer": {
+    "sections": {
+      "company": "Unternehmen",
+      "helpCenter": "Hilfezentrum",
+      "legal": "Rechtliches"
+    },
+    "companyLinks": {
+      "about": "Über uns",
+      "experience": "Erfahrung",
+      "testimonials": "Referenzen",
+      "motionGraphics": "Motion Graphics"
+    },
+    "helpCenterLinks": {
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "fiverr": "Fiverr",
+      "contactUs": "Kontaktieren Sie uns"
+    },
+    "legalLinks": {
+      "privacyPolicy": "Datenschutzrichtlinie",
+      "licensing": "Lizenzierung",
+      "termsConditions": "Allgemeine Geschäftsbedingungen"
+    },
+    "copyright": "© 2025 AFG Media. Alle Rechte vorbehalten.",
+    "social": {
+      "instagramPage": "Instagram-Seite",
+      "fiverrPage": "Fiverr-Seite",
+      "linkedinPage": "LinkedIn-Seite"
+    }
+  }
 }

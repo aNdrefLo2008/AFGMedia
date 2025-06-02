@@ -4,5 +4,154 @@
   "works": "Lavori",
   "testimonials": "Testimonianze",
   "contact": "Contatto",
-  "motion-graphics": "Grafica animata"
+  "motion-graphics": "Grafica animata",
+  "intro": "Introduzione",
+  "overview": "Panoramica",
+  "description": "Ciao! Siamo AFG Media, un team che aiuta le aziende a crescere. Facciamo marketing digitale per far conoscere la tua offerta a più persone. Possiamo pubblicare contenuti per far crescere il tuo pubblico o creare siti web che impressioneranno positivamente i tuoi clienti. Tutto ciò significa più clienti e più guadagni per te. Non dovrai più preoccuparti di trovare nuovi clienti – ce ne occuperemo noi. Offriamo un piano senza rischi: se non otteniamo i risultati desiderati, non dovrai pagare nulla. Piacere di conoscerti!",
+  "services": {
+    "posting": "Pubblicazione di contenuti",
+    "ads": "Gestione di pubblicità ottimizzate",
+    "landing": "Creazione di una landing page",
+    "seo": "Ottimizzazione SEO"
+  },
+  "sectionSubText": "Cosa abbiamo fatto finora",
+  "sectionHeadText": "Esperienza",
+  "experiences": [
+    {
+      "title": "Video Introduttivo in Motion Graphics",
+      "company_name": "Fidia",
+      "date": "Mar 2025 - Apr 2025",
+      "points": [
+        "Iniziato analizzando il progetto e i suoi obiettivi con Photoshop",
+        "Lavorato in After Effects per sviluppare il video",
+        "Collaborazione e comunicazione con il cliente per perfezionare il risultato finale",
+        "Progetto finalizzato"
+      ]
+    },
+    {
+      "title": "Intro animata con After Effects",
+      "company_name": "FIT-CISL",
+      "date": "Mar 2025 - Mag 2025",
+      "points": [
+        "Discussione approfondita del progetto con il cliente su Fiverr",
+        "Materiale organizzato con Photoshop per iniziare il lavoro",
+        "Collaborazione con un partner per massimizzare la soddisfazione del cliente",
+        "Progetto concluso e obiettivi raggiunti"
+      ]
+    }
+  ],
+  "Testimonials": {
+    "sectionSubText": "Cosa dicono gli altri",
+    "sectionHeadText": "Testimonianze.",
+    "items": [
+      {
+        "testimonial": "Sono rimasto colpito da quanto il team di AFG Media abbia mantenuto le sue promesse.",
+        "name": "Paolo",
+        "designation": "CFO",
+        "company": "Graphic Designer",
+        "image": "../src/assets/Studio Guri.png"
+      },
+      {
+        "testimonial": "Ottimo team talentuoso che ha mantenuto tutte le promesse. Veloce, bello e orientato agli obiettivi.",
+        "name": "Luca",
+        "designation": "COO",
+        "company": "Video Editor",
+        "image": "../src/assets/luca kudu anello.jpg"
+      }
+    ]
+  },
+  "projects": {
+    "sectionSubText": "Il nostro lavoro",
+    "sectionHeadText": "Progetti",
+    "description": "I seguenti progetti mostrano le nostre competenze ed esperienze attraverso esempi concreti del nostro lavoro. Ogni progetto è brevemente descritto con link ai repository del codice. Riflette la nostra capacità di risolvere problemi complessi, lavorare con tecnologie diverse e gestire efficacemente i progetti.",
+    "items": [
+      {
+        "name": "E-commerce",
+        "description": "Applicazione web dove gli utenti possono acquistare telefoni, tablet o laptop, utilizzando Stripe per pagamenti sicuri e GraphQL per la connessione col server.",
+        "tags": [
+          { "name": "nextjs", "color": "blue-text-gradient" },
+          { "name": "graphql", "color": "green-text-gradient" },
+          { "name": "stripeapi", "color": "pink-text-gradient" }
+        ],
+        "image": "../src/assets/E-Commerce.png",
+        "source_code_link": "https://github.com/aNdrefLo2008/e-commerce"
+      },
+      {
+        "name": "TikTak",
+        "description": "Applicazione web che permette agli utenti di condividere foto o video, mettere like e commentare.",
+        "tags": [
+          { "name": "zustand", "color": "blue-text-gradient" },
+          { "name": "sanity", "color": "green-text-gradient" },
+          { "name": "typescript", "color": "pink-text-gradient" }
+        ],
+        "image": "../src/assets/Tiktak.png",
+        "source_code_link": "https://github.com/aNdrefLo2008/tiktak"
+      },
+      {
+        "name": "Design Bello",
+        "description": "Landing page progettata con Figma e creata in React, realizzata per mostrare il potenziale di TailwindCSS.",
+        "tags": [
+          { "name": "nextjs", "color": "blue-text-gradient" },
+          { "name": "figma", "color": "green-text-gradient" },
+          { "name": "tailwindcss", "color": "pink-text-gradient" }
+        ],
+        "image": "../src/assets/landingPage.png",
+        "source_code_link": "https://github.com/aNdrefLo2008/beatiful-design"
+      }
+    ]
+  },
+  "Contact": {
+    "sectionSubText": "Mettiti in contatto",
+    "sectionHeadText": "Contatti",
+    "form": {
+      "labels": {
+        "name": "Il tuo nome",
+        "email": "La tua email",
+        "message": "Il tuo messaggio"
+      },
+      "placeholders": {
+        "name": "Come ti chiami?",
+        "email": "Qual è la tua email?",
+        "message": "Cosa vuoi dire?"
+      },
+      "button": {
+        "send": "Invia",
+        "sending": "Invio in corso..."
+      },
+      "alerts": {
+        "success": "Grazie. Ti risponderò il prima possibile.",
+        "error": "Ops, qualcosa è andato storto. Riprova, per favore."
+      }
+    }
+  },
+  "footer": {
+    "sections": {
+      "company": "Azienda",
+      "helpCenter": "Centro assistenza",
+      "legal": "Legale"
+    },
+    "companyLinks": {
+      "about": "Chi siamo",
+      "experience": "Esperienza",
+      "testimonials": "Testimonianze",
+      "motionGraphics": "Motion Graphics"
+    },
+    "helpCenterLinks": {
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "fiverr": "Fiverr",
+      "contactUs": "Contattaci"
+    },
+    "legalLinks": {
+      "privacyPolicy": "Politica sulla privacy",
+      "licensing": "Licenze",
+      "termsConditions": "Termini e condizioni"
+    },
+    "copyright": "© 2025 AFG Media. Tutti i diritti riservati.",
+    "social": {
+      "instagramPage": "Pagina Instagram",
+      "fiverrPage": "Pagina Fiverr",
+      "linkedinPage": "Pagina LinkedIn"
+    }
+  }
 }
