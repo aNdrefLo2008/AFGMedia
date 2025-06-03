@@ -7,7 +7,7 @@ const New_Hero = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="bg-white xl:mt-0 dark:bg-black transition-colors duration-500 relative w-full min-h-screen flex flex-col xl:flex-row items-center justify-center px-6 py-12 gap-10 lg:gap-16">
+    <section className="bg-white xl:mt-0 dark:bg-black transition-colors duration-500 relative w-full min-h-screen flex flex-col xl:flex-row items-center justify-center px-6 py-12 gap-10 md:gap-20 lg:gap-16">
       
       {/* Left side text */}
       <div className="lg:ml-20 flex flex-col mt-20 xl:-mt-32 items-center sm:items-start justify-center gap-6 text-center sm:text-left lg:max-w-xl max-w-md">
@@ -46,7 +46,7 @@ const New_Hero = () => {
       </div>
 
       {/* Right side cards */}
-      <div className="flex items-center justify-center w-full sm:w-auto relative">
+      <div className="md:mb-0 mb-40 flex items-center justify-center w-full sm:w-auto relative">
         <CardsHero />
       </div>
     </section>

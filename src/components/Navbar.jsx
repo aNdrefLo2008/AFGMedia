@@ -104,11 +104,11 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <div className='bg-black rounded-full p-3 mr-2'>
-            <img src={logo} alt="logo" className='h-8 w-8 rounded-full' />
+          <div className='bg-black  rounded-full p-3 mr-2'>
+            <img src={logo} alt="logo" className='sm:h-8 w-8 rounded-full' />
           </div>
           
-          <p className='text-black transition-colors duration-500 dark:text-white text-[18px] font-bold cursor-pointer'>AFG Media</p>
+          <p className='hidden md:block text-black transition-colors duration-500 dark:text-white text-[18px] font-bold cursor-pointer'>AFG Media</p>
         </Link>
 
         {/* Desktop Nav */}
