@@ -195,7 +195,7 @@ const Navbar = () => {
           </motion.button>
 
           {/* Hamburger Menu */}
-          <div className='lg:hidden block'>
+          <div className='xl:hidden block'>
             <HiOutlineMenuAlt3 alt="menu"
               className={`${toggle ? "hidden" : "inline"} w-[28px] h-[28px] object-contain cursor-pointer transition-colors duration-500 dark:text-white text-black`}
               onClick={() => setToggle(!toggle)}/>
