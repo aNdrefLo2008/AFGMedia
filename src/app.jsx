@@ -7,6 +7,7 @@ import { About, Contact, Hero, Navbar, Works, Tech, StarsCanvas, MotionGraphics,
 import { Analytics } from '@vercel/analytics/react';
 import New_Hero from './components/New Hero';
 import Footer from './components/Footer';
+import CTA from './components/CTA';
 
 const App = () => {
   return (
@@ -35,6 +36,7 @@ const App = () => {
                 <StarsCanvas />
                 <Contact />
               </div>
+              <CTA />
               <Footer />
             </>
           } />

@@ -8,19 +8,19 @@ import coding_img from "../assets/Programming.svg"
 
 function CardsHero() {
   return (
-    <div className="flex flex-col items-center justify-center gap-6 xl:relative w-[420px] sm:w-[480px] md:w-[600px] lg:w-[700px] h-[500px]">
+    <div className="flex flex-col items-center justify-center gap-6 xl:relative w-[420px] sm:w-[480px] md:w-[600px] xl:w-[700px] h-[500px]">
       {/* Top Card */}
-      <div className="md:absolute z-30 md:-top-10 md:left-44  bg-white transition-colors duration-500 dark:bg-gray-900 shadow-2xl lg:px-6 lg:py-8 px-4 py-6 rounded-3xl flex flex-col justify-center gap-4 w-52 lg:w-64 md:w-72 ">
+      <div className="md:absolute z-30 md:-top-10 md:left-44  bg-white transition-colors duration-500 dark:bg-gray-900 shadow-2xl xl:px-6 xl:py-8 px-4 py-6 rounded-3xl flex flex-col justify-center gap-4 w-52 xl:w-64 md:w-72 ">
         <CardContent title="Video Editing" img={video_editing_img} Icon={FaPhotoFilm} />
       </div>
 
       {/* Middle Card */}
-      <div className="md:absolute z-20 top-48 left-0 bg-white transition-colors duration-500 dark:bg-gray-900 shadow-2xl lg:px-6 lg:py-8 px-4 py-6 rounded-3xl flex flex-col justify-center gap-4 w-52 lg:w-64 md:w-72">
+      <div className="md:absolute z-20 top-48 left-0 bg-white transition-colors duration-500 dark:bg-gray-900 shadow-2xl xl:px-6 xl:py-8 px-4 py-6 rounded-3xl flex flex-col justify-center gap-4 w-52 xl:w-64 md:w-72">
         <CardContent title="Web Dev" img={coding_img} Icon={CgWebsite} />
       </div>
 
       {/* Bottom Card */}
-      <div className="md:absolute z-10 lg:top-60 top-52 left-56 lg:left-60 md:left-72 bg-white transition-colors duration-500 dark:bg-gray-900 shadow-2xl lg:px-6 lg:py-8 px-4 py-6 rounded-3xl flex flex-col justify-center gap-4 w-60 lg:w-64 xl:w-72">
+      <div className="md:absolute z-10 xl:top-64 top-56 left-56 xl:left-60 md:left-72 bg-white transition-colors duration-500 dark:bg-gray-900 shadow-2xl xl:px-6 xl:py-8 px-4 py-6 rounded-3xl flex flex-col justify-center gap-4 w-60 lg:w-64 xl:w-72">
         <CardContent title="Motion Graphics" img={ae_img} Icon={RiFilmAiLine} />
       </div>
     </div>

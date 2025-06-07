@@ -159,5 +159,9 @@
       "fiverrPage": "Fiverr page",
       "linkedinPage": "LinkedIn page"
     }
+  },
+  "CTA": {
+    "title": "Start Now",
+    "subtext": "We ensure the fastest growth possible for your business today"
   }
 }
