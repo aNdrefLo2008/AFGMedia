@@ -1,18 +1,28 @@
-// App.jsx
+import React, { useEffect } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import React from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-
-import { About, Contact, Hero, Navbar, Works, Tech, StarsCanvas, MotionGraphics, Experience, Feedbacks } from './components'
+import { About, Contact, Navbar, Works, Tech, StarsCanvas, MotionGraphics, Experience, Feedbacks } from './components'
 import { Analytics } from '@vercel/analytics/react';
 import New_Hero from './components/New Hero';
 import Footer from './components/Footer';
 import CTA from './components/CTA';
 
 const App = () => {
+
+  useEffect(() => {
+    const updateMouse = (e) => {
+      const x = e.clientX + 'px';
+      const y = e.clientY + 'px';
+      document.body.style.setProperty('--x', x);
+      document.body.style.setProperty('--y', y);
+    };
+    window.addEventListener('mousemove', updateMouse);
+    return () => window.removeEventListener('mousemove', updateMouse);
+  }, []);
+
   return (
     <BrowserRouter>
-      <div className='relative z-0 bg-primary'>
+      <div className='relative bg-primary'>
         <Analytics />
         <Navbar />
         <Routes>
@@ -30,9 +40,9 @@ const App = () => {
                 <Works />
               </div>
               <div id="testimonials">
-              <Feedbacks />
+                <Feedbacks />
               </div>
-              <div className='relative z-0' id="contact">
+              <div className='relative' id="contact">
                 <StarsCanvas />
                 <Contact />
               </div>

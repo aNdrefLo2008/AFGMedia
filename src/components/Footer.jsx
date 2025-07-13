@@ -7,8 +7,8 @@ function Footer() {
   const { t } = useTranslation();
 
   return (
-    <footer className="bg-white transition-colors duration-500 dark:bg-tertiary">
-      <div className="mx-auto w-full max-w-screen-xl">
+    <footer className="bg-white transition-colors duration-500 dark:bg-tertiary z-50">
+      <div className="mx-auto w-full max-w-screen-xl z-50">
         <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-3">
           <div>
             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase transition-colors duration-500 dark:text-white">
