@@ -92,150 +92,153 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`${styles.paddingX} z-50 w-full flex items-center py-5 fixed top-0 backdrop-blur`}>
-      <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
+    <div className='flex items-center justify-center'>
+      <nav className={`${styles.paddingX} z-[100] m-2 border border-gray-300 dark:border-gray-600 rounded-3xl  xl:w-5/6 md:w-4/6 w-5/6 flex justify-center items-center lg:py-5 md:py-4 py-3 fixed top-0 backdrop-blur`}>
+        <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
 
-        {/* Logo */}
-        <Link
-          to="/"
-          className='flex items-center gap-2'
-          onClick={() => {
-            setActive('');
-            window.scrollTo(0, 0);
-          }}
-        >
-          <div className='bg-black  rounded-full p-3 mr-2'>
-            <img src={logo} alt="logo" className='sm:h-8 w-8 rounded-full' />
-          </div>
-          
-          <p className='hidden md:block text-black transition-colors duration-500 dark:text-white text-[18px] font-bold cursor-pointer'>AFG Media</p>
-        </Link>
-
-        {/* Desktop Nav */}
-        <ul className='list-none hidden xl:flex flex-row gap-10 items-center'>
-          {navLinks.map(link => (
-            <li
-              key={link.id}
-              className={`${active === link.title ? 'text-black transition-colors duration-500 dark:text-white' : 'text-gray-500 transition-colors duration-500 dark:text-gray-400'} first-letter:uppercase hover:text-black hover transition-colors duration-500:dark:text-white text-[18px] font-medium cursor-pointer`}
-            >
-              {link.type === 'route' ? (
-                <Link to={`/${link.id}`} onClick={() => setActive(link.title)}>
-                  {t(link.title)}
-                </Link>
-              ) : (
-                <a
-                  href={`#${link.id}`}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    handleNavClick(link);
-                  }}
-                >
-                  {t(link.title)}
-                </a>
-              )}
-            </li>
-          ))}
-        </ul>
-
-        {/* Right Controls */}
-        <div className="flex items-center gap-4 ml-4">
-
-          {/* Language Selector */}
-          <div className="relative mr-2" ref={langRef}>
-            <button onClick={() => setShowLangDropdown(prev => !prev)} className="flex items-center gap-2 text-black transition-colors duration-500 dark:text-white">
-              <motion.div
-                className='p-3 bg-gray-200 transition-colors duration-500 dark:bg-tertiary rounded-full'
-                whileTap={{ scale: 0.9 }}
-                whileHover={{ scale: 1.1 }}
-              >
-                <img src={flagMap[language] || enFlag} className="w-6 h-6" />
-              </motion.div>
-            </button>
-
-            <AnimatePresence>
-              {showLangDropdown && (
-                <motion.div
-                  initial={{ opacity: 0, y: -10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -10 }}
-                  transition={{ duration: 0.2 }}
-                  className="absolute top-10 left-0 bg-gray-200 transition-colors duration-500 dark:bg-tertiary mt-6 rounded-md shadow-md py-2 pl-4 pr-8 z-50"
-                >
-                  {['en', 'de', 'it'].map(lang => (
-                    <div
-                      key={lang}
-                      className="flex items-center gap-2 cursor-pointer hover:text-black text-black transition-colors duration-500 dark:text-white py-2"
-                      onClick={() => changeLanguage(lang)}
-                    >
-                      <img src={flagMap[lang]} className="w-5 h-5" />
-                      <span className="capitalize inline">
-                        {lang.toUpperCase()}
-                      </span>
-                    </div>
-                  ))}
-                </motion.div>
-              )}
-            </AnimatePresence>
-          </div>
-
-          {/* Theme Toggle */}
-          <motion.button
-            onClick={toggleTheme}
-            whileTap={{ rotate: 45, scale: 0.9 }}
-            whileHover={{ scale: 1.1 }}
-            className="text-black block transition-colors duration-500 dark:text-white mr-2"
+          {/* Logo */}
+          <Link
+            to="/"
+            className='flex items-center gap-2'
+            onClick={() => {
+              setActive('');
+              window.scrollTo(0, 0);
+            }}
           >
-            <div className='p-3 bg-gray-200 transition-colors duration-500 dark:bg-tertiary rounded-full'>
-              {theme === 'dark' ? (
-                <FaSun className="h-5 w-5" />
-              ) : (
-                <IoMdMoon className="h-5 w-5" />
-              )}
+            <div className='bg-black  rounded-full p-3 mr-2'>
+              <img src={logo} alt="logo" className='sm:h-8 w-8 rounded-full' />
             </div>
-          </motion.button>
+            
+            <p className='hidden md:block text-black transition-colors duration-500 dark:text-white text-[18px] font-bold cursor-pointer'>AFG Media</p>
+          </Link>
 
-          {/* Hamburger Menu */}
-          <div className='xl:hidden block'>
-            <HiOutlineMenuAlt3 alt="menu"
-              className={`${toggle ? "hidden" : "inline"} w-[28px] h-[28px] object-contain cursor-pointer transition-colors duration-500 dark:text-white text-black`}
-              onClick={() => setToggle(!toggle)}/>
-            <IoMdClose alt="menu"
-              className={`${toggle ? "inline" : "hidden"} w-[28px] h-[28px] object-contain cursor-pointer transition-colors duration-500 dark:text-white text-black`}
-              onClick={() => setToggle(!toggle)}/>
-          </div>
-        </div>
+          {/* Desktop Nav */}
+          <ul className='list-none hidden 2xl:flex flex-row gap-10 items-center'>
+            {navLinks.map(link => (
+              <li
+                key={link.id}
+                className={`${active === link.title ? 'text-black transition-colors duration-500 dark:text-white' : 'text-gray-500 transition-colors duration-500 dark:text-gray-400'} first-letter:uppercase hover:text-black hover transition-colors duration-500:dark:text-white text-[18px] font-medium cursor-pointer`}
+              >
+                {link.type === 'route' ? (
+                  <Link to={`/${link.id}`} onClick={() => setActive(link.title)}>
+                    {t(link.title)}
+                  </Link>
+                ) : (
+                  <a
+                    href={`#${link.id}`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleNavClick(link);
+                    }}
+                  >
+                    {t(link.title)}
+                  </a>
+                )}
+              </li>
+            ))}
+          </ul>
 
-        {/* Mobile Nav Menu */}
-        {toggle && (
-          <div className='xl:hidden p-6 bg-gray-200 transition-colors duration-500 dark:bg-tertiary absolute top-20 right-4 my-2 min-w-[140px] z-10 rounded-xl'>
-            <ul className='list-none flex flex-col gap-4'>
-              {navLinks.map(link => (
-                <li
-                  key={link.id}
-                  className={`${active === link.title ? 'text-black transition-colors duration-500 dark:text-white' : 'text-gray-500 transition-colors duration-500 dark:text-gray-400'} font-medium cursor-pointer hover:text-black hover transition-colors duration-500:dark:text-white text-[16px] first-letter:uppercase`}
+          {/* Right Controls */}
+          <div className="flex items-center gap-4 ml-4">
+
+            {/* Language Selector */}
+            <div className="relative mr-2" ref={langRef}>
+              <button onClick={() => setShowLangDropdown(prev => !prev)} className="flex items-center gap-2 text-black transition-colors duration-500 dark:text-white">
+                <motion.div
+                  className='p-3 bg-gray-200 transition-colors duration-500 dark:bg-tertiary rounded-full'
+                  whileTap={{ scale: 0.9 }}
+                  whileHover={{ scale: 1.1 }}
                 >
-                  {link.type === 'route' ? (
-                    <Link to={`/${link.id}`} onClick={() => setActive(link.title)}>
-                      {t(link.title)}
-                    </Link>
-                  ) : (
-                    <a
-                      href={`#${link.id}`}
-                      onClick={(e) => {
-                        e.preventDefault();
-                        handleNavClick(link);
-                      }}
-                    >
-                      {t(link.title)}
-                    </a>
-                  )}
-                </li>
-              ))}
-            </ul>
+                  <img src={flagMap[language] || enFlag} className="w-6 h-6" />
+                </motion.div>
+              </button>
+
+              <AnimatePresence>
+                {showLangDropdown && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    transition={{ duration: 0.2 }}
+                    className="absolute top-10 left-0 bg-gray-200 transition-colors duration-500 dark:bg-tertiary mt-6 rounded-md shadow-md py-2 pl-4 pr-8 z-50"
+                  >
+                    {['en', 'de', 'it'].map(lang => (
+                      <div
+                        key={lang}
+                        className="flex items-center gap-2 cursor-pointer hover:text-black text-black transition-colors duration-500 dark:text-white py-2"
+                        onClick={() => changeLanguage(lang)}
+                      >
+                        <img src={flagMap[lang]} className="w-5 h-5" />
+                        <span className="capitalize inline">
+                          {lang.toUpperCase()}
+                        </span>
+                      </div>
+                    ))}
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+
+            {/* Theme Toggle */}
+            <motion.button
+              onClick={toggleTheme}
+              whileTap={{ rotate: 45, scale: 0.9 }}
+              whileHover={{ scale: 1.1 }}
+              className="text-black block transition-colors duration-500 dark:text-white mr-2"
+            >
+              <div className='p-3 bg-gray-200 transition-colors duration-500 dark:bg-tertiary rounded-full'>
+                {theme === 'dark' ? (
+                  <FaSun className="h-5 w-5" />
+                ) : (
+                  <IoMdMoon className="h-5 w-5" />
+                )}
+              </div>
+            </motion.button>
+
+            {/* Hamburger Menu */}
+            <div className='2xl:hidden block'>
+              <HiOutlineMenuAlt3 alt="menu"
+                className={`${toggle ? "hidden" : "inline"} w-[28px] h-[28px] object-contain cursor-pointer transition-colors duration-500 dark:text-white text-black`}
+                onClick={() => setToggle(!toggle)}/>
+              <IoMdClose alt="menu"
+                className={`${toggle ? "inline" : "hidden"} w-[28px] h-[28px] object-contain cursor-pointer transition-colors duration-500 dark:text-white text-black`}
+                onClick={() => setToggle(!toggle)}/>
+            </div>
           </div>
-        )}
-      </div>
-    </nav>
+
+          {/* Mobile Nav Menu */}
+          {toggle && (
+            <div className='xl:hidden p-6 bg-gray-200 transition-colors duration-500 dark:bg-tertiary absolute top-20 right-4 my-2 min-w-[140px] z-10 rounded-xl'>
+              <ul className='list-none flex flex-col gap-4'>
+                {navLinks.map(link => (
+                  <li
+                    key={link.id}
+                    className={`${active === link.title ? 'text-black transition-colors duration-500 dark:text-white' : 'text-gray-500 transition-colors duration-500 dark:text-gray-400'} font-medium cursor-pointer hover:text-black hover transition-colors duration-500:dark:text-white text-[16px] first-letter:uppercase`}
+                  >
+                    {link.type === 'route' ? (
+                      <Link to={`/${link.id}`} onClick={() => setActive(link.title)}>
+                        {t(link.title)}
+                      </Link>
+                    ) : (
+                      <a
+                        href={`#${link.id}`}
+                        onClick={(e) => {
+                          e.preventDefault();
+                          handleNavClick(link);
+                        }}
+                      >
+                        {t(link.title)}
+                      </a>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
+      </nav>
+    </div>
+    
   );
 };
 

@@ -8,6 +8,7 @@ import Works from './Works';
 import Feedbacks from './Feedbacks';
 import Contact from './Contact';
 import MotionGraphics from './MotionGraphics';
+import Footer from './Footer'
 
 export {
   MotionGraphics,
@@ -22,5 +23,6 @@ export {
   EarthCanvas, 
   BallCanvas, 
   ComputersCanvas, 
-  StarsCanvas
+  StarsCanvas,
+  Footer
 }

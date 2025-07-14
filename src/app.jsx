@@ -1,10 +1,9 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import { About, Contact, Navbar, Works, Tech, StarsCanvas, MotionGraphics, Experience, Feedbacks } from './components'
+import { About, Footer, Contact, Navbar, Works, Tech, StarsCanvas, MotionGraphics, Experience, Feedbacks } from './components'
 import { Analytics } from '@vercel/analytics/react';
 import New_Hero from './components/New Hero';
-import Footer from './components/Footer';
 import CTA from './components/CTA';
 
 const App = () => {
@@ -23,6 +22,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className='relative bg-primary'>
+        <div className="fixed inset-0 pointer-events-none z-10 grid-overlay" />
         <Analytics />
         <Navbar />
         <Routes>
@@ -39,7 +39,7 @@ const App = () => {
               <div id="works">
                 <Works />
               </div>
-              <div id="testimonials">
+              <div id="testimonials relative">
                 <Feedbacks />
               </div>
               <div className='relative' id="contact">

@@ -24,7 +24,7 @@ const New_Hero = () => {
         </div>
 
         {/* Buttons */}
-        <div className="flex flex-row items-center justify-center gap-4">
+        <div className="flex flex-row items-center justify-center gap-4 z-50">
           <div className="button-shadow transition hover:-translate-y-1 duration-500 hover:scale-110 rounded-full">
             <div className="inner-button xl:p-6 sm:p-4 p-3 rounded-full font-bold dark:hover:bg-gray-200 transition hover:bg-gray-900">
               <Link to={"https://calendly.com/afgmedia15/introductory-call"}>
@@ -35,7 +35,7 @@ const New_Hero = () => {
             </div>
           </div>
 
-          <div className="bg-gray-50 dark:bg-tertiary xl:p-6 sm:p-4 p-3 rounded-full shadow-card button-shadow duration-500 transition border border-gray-500">
+          <div className="bg-gray-50 z-50 dark:bg-tertiary xl:p-6 sm:p-4 p-3 rounded-full shadow-card button-shadow duration-500 transition border border-gray-500">
             <a href="#contact">
               <h1 className="lg:text-base text-sm font-semibold text-center text-black dark:text-white">
                 {t('hero.contactUs')}

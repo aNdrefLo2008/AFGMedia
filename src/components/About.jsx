@@ -22,16 +22,16 @@ const iconMap = {
 };
 
 const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className="xs:w-[250px] w-full z-30">
+  <Tilt className="xs:w-[250px] w-full z-50">
     <motion.div
       variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-      className='z-30 w-full transition-colors duration-500 dark:bg-gradient-to-r from-blue-900 to-green-900 p-[1px] rounded-[20px] shadow-experiment-card'
+      className=' w-full transition-colors duration-500 dark:bg-gradient-to-r from-blue-900 to-green-900 p-[1px] rounded-[20px] shadow-experiment-card'
     >
       <div
         className='bg-white transition-colors duration-500 dark:bg-tertiary rounded-[20px] py-5 px-12 z-30 min-h-[280px] flex justify-evenly items-center flex-col'
       >
         {iconMap[icon]}
-        <h3 className='text-black transition-colors duration-500 dark:text-white text-[20px] font-bold text-center z-30'>{title}</h3>
+        <h3 className='text-black transition-colors duration-500 dark:text-white text-[20px] font-bold text-center'>{title}</h3>
       </div>
     </motion.div>
   </Tilt>
@@ -53,7 +53,7 @@ const About = () => {
         {t('description')}
       </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10 z-10'>
+      <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, i) => (
           <ServiceCard
             key={service.id}

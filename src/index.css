@@ -17,21 +17,17 @@ body {
   overflow-x: hidden;
 }
 
-/*@media (min-width: 1024px) {
-  body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background-image:
-      linear-gradient(90deg, rgba(255,255,255,0.3) 1px, transparent 1px),
-      linear-gradient(rgba(255, 255, 255, 0.3) 1px, transparent 1px);
-    background-size: 60px 60px;
-    pointer-events: none;
-    mask-image: radial-gradient(circle 300px at var(--x) var(--y), white 0%, transparent 100%);
-    -webkit-mask-image: radial-gradient(circle 300px at var(--x) var(--y), white 0%, transparent 100%);
-    z-index: 5;
-  }
-}*/
+@media (min-width: 1024px) {
+  .grid-overlay {
+  background-image:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.219) 1px, transparent 1px),
+    linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px);
+  background-size: 80px 80px;
+  mask-image: radial-gradient(circle 250px at var(--x, 50%) var(--y, 50%), white 0%, transparent 100%);
+  -webkit-mask-image: radial-gradient(circle 250px at var(--x, 50%) var(--y, 50%), white 0%, transparent 100%);
+}
+
+}
 
 * {
   margin: 0;

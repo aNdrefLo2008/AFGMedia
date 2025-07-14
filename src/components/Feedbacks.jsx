@@ -53,7 +53,7 @@ const Feedbacks = () => {
 
   return (
     <div
-      className={`mt-12 bg-gray-200 transition-colors duration-500 dark:bg-black-100 rounded-[20px]`}
+      className={`relative z-50 mt-12 bg-gray-200 transition-colors duration-500 dark:bg-black-100 rounded-[20px]`}
     >
       <div
         className={`bg-slate-100 transition-colors duration-500 dark:bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}
