@@ -33,9 +33,6 @@ const App = () => {
                 <About />
               </div>
               <Experience />
-              <div className='hidden sm:block'>
-                <Tech />
-              </div>
               <div id="works">
                 <Works />
               </div>
