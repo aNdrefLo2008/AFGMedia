@@ -43,7 +43,6 @@ const App = () => {
                 <Feedbacks />
               </div>
               <div className='relative' id="contact">
-                <StarsCanvas />
                 <Contact />
               </div>
               <CTA />
